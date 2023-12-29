@@ -3,7 +3,7 @@
 Script: Auto Heal
 Author: CHEROKI
 Server: Ultima Alianza
-Current Version: 0.2
+Current Version: 0.2.1
 Description: El script se encarga de curar al personaje cuando este se encuentra herido, ademas de avisar de la vida que tiene tras curarse y limpiar las vendas sucias.
 
 */
@@ -13,7 +13,7 @@ const dirtyBandagesType = 0xE20;
 const waterContainerType = 0x1008;
 
 // Informacion
-const version = 0.2
+const version = "0.2.1"
 
 client.sysMsg('Auto Heal by CHEROKI', 33)
 client.sysMsg(`Version ${version}`, 66)
@@ -50,7 +50,7 @@ function clearBandages() {
   const waterContainer = client.findType(waterContainerType)
   if (dirtyBandages) {
     player.use(dirtyBandages)
-    target.wait(1000)
+    target.wait(500)
     target.entity(waterContainer)
   }
 }
@@ -79,6 +79,12 @@ Version 0.1
 Version 0.2
 
 - Se agrega la funcion de limpiar las vendas sucias
+---------
+
+2023-12-29
+Version 0.2.1
+
+- Reducido el tiempo de espera para limpiar las vendas sucias a 500ms
 
 */
 
