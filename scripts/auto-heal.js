@@ -1,6 +1,5 @@
 /* 
 
-Script: Auto Heal
 Author: CHEROKI
 Server: Ultima Alianza
 Current Version: 0.3
@@ -12,9 +11,10 @@ Description: El script se encarga de curar al personaje cuando este se encuentra
 const quantityDirtyBandages = 10 // numero de vendas sucias apiladas antes de ser limpiadas
 
 // Informacion
+const scriptName = 'Auto-Heal'
 const version = "0.3"
 
-client.sysMsg('Auto Heal by CHEROKI', 33)
+client.sysMsg(`${scriptName} by CHEROKI`, 33)
 client.sysMsg(`Version ${version}`, 66)
 
 // Codigo
