@@ -53,7 +53,7 @@ Version 0.1
 
 TODO
 ----
-- Comprobar si se buguea cuando el pj es paralizado
+- Comprobar si se buguea en algun momento
 
 */
 
