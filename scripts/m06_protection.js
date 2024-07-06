@@ -1,0 +1,1 @@
+player.cast(Spells.Protection);
