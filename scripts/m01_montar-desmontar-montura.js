@@ -8,7 +8,7 @@ Description: El script se encarga de montar y desmontar las monturas que se le i
 */
 
 // Configuracion
-let pets = [0x1619E12, 0x1584142, 0x111111]; // agregar aqui el serial de las monturas que queramos usar
+let pets = []; // agregar aqui el serial de las monturas que queramos usar
 // ejemplo: let pets = [0x0000000, 0x1111111, 0x2222222];
 
 // Informacion
